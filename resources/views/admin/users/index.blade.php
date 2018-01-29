@@ -1,8 +1,17 @@
+<?php
+\Carbon\Carbon::setLocale('fa');
+?>
 @extends('layouts.admin')
 
 
 
 @section('content')
+
+    @if(Session::has('deleted_user'))
+
+        <span class="bg-danger">{{session('deleted_user')}}</span>
+
+    @endif
 
     <h1>Users</h1>
 

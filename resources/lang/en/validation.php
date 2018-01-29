@@ -127,6 +127,9 @@ return array(
         "time" => "زمان",
         "available" => "موجود",
         "role_id" => "سطح دسترسی کاربر",
-        "size" => "اندازه"
+        "size" => "اندازه",
+        "category_id" => "دسته بندی",
+        "photo_id" => "تصویر",
+        "body" => "محتوا"
     ),
 );
