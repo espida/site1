@@ -29,7 +29,7 @@
             <tr>
                 <td>{{$post->id}}</td>
                 <td>{{$post->user->name}}</td>
-                <td>{{$post->category_id}}</td>
+                <td>{{$post->category ? $post->category->name : 'No categories'}}</td>
                 <td><img src="{{$post->photo ? $post->photo->file : '/images/image-not-found.jpg'}}" alt="{{$post->photo ? $post->photo->file : 'image not found'}}" title="{{$post->title}}" class="img img-responsive"></td>
                 <td>{{$post->title}}</td>
                 <td>{{$post->body}}</td>
